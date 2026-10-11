@@ -6,13 +6,21 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#FFFFFF">
 <title>삼동노인복지지원센터</title>
-<meta name="description" content="울주군에서 지정한 노인장기요양보험 장기요양기관. 울산 울주군 12개 읍·면 어디든 방문요양, 장기요양등급 신청 안내. 삼동노인복지지원센터 052-254-7115">
+<meta name="description" content="울산 울주군에서 지정한 노인장기요양보험 장기요양기관. 울산 울주군 12개 읍·면 어디든 방문요양, 장기요양등급 신청 안내. 삼동노인복지지원센터 052-254-7115">
 <link rel="canonical" href="https://www.samdongcare.kr/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.samdongcare.kr/">
-<meta property="og:title" content="삼동노인복지지원센터 | 울주군 지정 방문요양">
-<meta property="og:description" content="울주군 12개 읍·면 어디든 어르신 댁으로 찾아갑니다. 장기요양등급 신청 안내부터 도와드려요. 052-254-7115">
-<meta property="og:image" content="https://www.samdongcare.kr/img/il-hero.jpg">
+<meta property="og:title" content="삼동노인복지지원센터 | 울산 울주군 지정 방문요양">
+<meta property="og:description" content="울산 울주군 12개 읍·면 어디든 어르신 댁으로 찾아갑니다. 장기요양등급 신청 안내부터 도와드려요. 052-254-7115">
+<meta property="og:image" content="https://www.samdongcare.kr/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="삼동노인복지지원센터 로고">
+<meta property="og:site_name" content="삼동노인복지지원센터">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.samdongcare.kr/img/og.png">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta property="og:locale" content="ko_KR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -309,20 +317,29 @@ footer address{font-style:normal;line-height:1.75}
 @media (max-width:640px){
   body{font-size:17px}
   .sec{padding-block:30px}
+  .btn.sec{padding-block:0}
   .hero{padding-block:18px 4px}
   .hero-card{grid-template-columns:1fr}
   .hero-card > div:first-child{padding:24px 22px 26px}
   .hero-photo{order:-1;min-height:0;aspect-ratio:4/3}
   .care-photo{min-height:0;aspect-ratio:4/3}
   .care-list{padding:4px 18px}
-  .cta .btn{flex:1 1 auto}
+  .cta{margin-top:20px}
+  .cta .btn.pri{display:none}
+  .cta .btn.sec{flex:1 1 100%;min-height:52px;background:var(--tint);color:var(--green-deep)}
+  .cta .btn.sec::after{content:"›";font-size:22px;line-height:1;margin-left:2px}
   .trust,.svc,.trust.trust3,.seek ul{grid-template-columns:1fr}
   .seek{padding:24px 22px}
   .proof{grid-template-columns:1fr;gap:8px}
   .proof .card{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:14px;row-gap:2px;padding:16px 18px}
   .proof .seal{grid-row:span 2}
   .proof b br{display:none}
-  .nav a{padding:8px 11px;font-size:15.5px}
+  .bar{padding-top:8px}
+  .logo svg{width:38px;height:38px}
+  .nav{margin:8px 0 0;padding:8px 0;gap:6px;border-top:1px solid var(--line);background:#F5F8F6;box-shadow:0 0 0 100vmax #F5F8F6;clip-path:inset(0 -100vmax)}
+  .nav a{padding:7px 13px;font-size:15px;background:#FFFFFF;border:1px solid var(--line);border-radius:999px;color:var(--sub)}
+  .nav a[aria-current="page"]{background:var(--green);border-color:var(--green);color:#FFFFFF}
+  .sec-area{padding-top:22px}
   .actions{grid-template-columns:repeat(2,minmax(0,1fr))}
   .band{grid-template-columns:1fr;padding:24px}
   .band .btn{justify-self:start}
@@ -405,8 +422,8 @@ footer address{font-style:normal;line-height:1.75}
     <div class="wrap">
       <div class="card hero-card">
         <div>
-          <span class="badge"><svg width="18" height="18" aria-hidden="true"><use href="#i-shield"/></svg>울주군 지정 노인장기요양보험 장기요양기관</span>
-          <h1>울주군 어디든<br><em>어르신 댁으로</em> 찾아갑니다</h1>
+          <span class="badge"><svg width="18" height="18" aria-hidden="true"><use href="#i-shield"/></svg>울산 울주군 지정 장기요양기관</span>
+          <h1>울산 울주군 어디든<br><em>어르신 댁으로</em> 찾아갑니다</h1>
           <p class="hero-lead">국가자격을 갖춘 요양보호사가 댁을 찾아가 식사와 위생, 일상생활을 돕습니다. 장기요양등급이 아직 없으셔도 <span class="nw">신청 방법부터</span> 차근차근 안내해 드려요.</p>
           <div class="cta">
             <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화 상담하기</a>
@@ -419,16 +436,49 @@ footer address{font-style:normal;line-height:1.75}
       </div>
 
       <div class="proof">
-        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-shield"/></svg></div><b>울주군 지정<br>장기요양기관</b><span>노인장기요양보험법에 따라 <span class="nw">울주군에서 지정한</span> 기관입니다</span></div>
-        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-card"/></svg></div><b>노인장기요양보험<br>급여 적용</b><span>비용의 85~100%를 장기요양보험에서 지원합니다</span></div>
-        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-user"/></svg></div><b>국가자격<br>요양보호사</b><span>요양보호사 자격증을 가진 분만 어르신 댁을 방문합니다</span></div>
-        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-cap"/></svg></div><b>사회복지사<br>센터장 직접 운영</b><span>사회복지사인 센터장이 서비스를 직접 살핍니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-shield"/></svg></div><b>울산 울주군 지정 <br>장기요양기관</b><span>노인장기요양보험법에 따라 <span class="nw">울산 울주군에서 지정한</span> 기관입니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-card"/></svg></div><b>노인장기요양보험 <br>급여 적용</b><span>비용의 85~100%를 장기요양보험에서 지원합니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-user"/></svg></div><b>국가자격 <br>요양보호사</b><span>요양보호사 자격증을 가진 분만 어르신 댁을 방문합니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-cap"/></svg></div><b>사회복지사 <br>센터장 직접 운영</b><span>사회복지사인 센터장이 서비스를 직접 살핍니다</span></div>
       </div>
       <p class="verify-line"><svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>지정 기관인지는 국민건강보험공단 <a href="https://longtermcare.or.kr/npbs/t/z/150/selectLtcoInfoList" target="_blank" rel="noopener">장기요양기관 찾기</a>에서 직접 확인하실 수 있습니다.</p>
     </div>
   </section>
 
-  <section class="sec">
+<section class="sec sec-area">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">찾아가는 지역</span><h2>울산 울주군 <span class="nw">12개 읍·면</span> 어디든 찾아갑니다</h2></div>
+      <div class="area">
+        <div class="card map-card">
+          <div class="map" role="img" aria-label="삼동면 센터에서 울산 울주군 12개 읍·면 모두로 방문합니다.">
+            <svg class="rays" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <g stroke="#8FC3A5" stroke-width="1.6" stroke-dasharray="4 5" fill="none" stroke-linecap="round"><line x1="44" y1="58" x2="52" y2="10" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="20" y2="22" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="80" y2="20" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="28" y2="40" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="62" y2="36" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="17" y2="64" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="74" y2="54" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="83" y2="71" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="36" y2="80" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="60" y2="87" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="84" y2="94" vector-effect="non-scaling-stroke"/></g>
+            </svg>
+            <span class="pl" style="left:52%;top:10%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두서면</span>
+            <span class="pl" style="left:20%;top:22%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>상북면</span>
+            <span class="pl" style="left:80%;top:20%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두동면</span>
+            <span class="pl" style="left:28%;top:40%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>언양읍</span>
+            <span class="pl" style="left:62%;top:36%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>범서읍</span>
+            <span class="pl" style="left:17%;top:64%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼남읍</span>
+            <span class="pl" style="left:74%;top:54%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>청량읍</span>
+            <span class="pl" style="left:83%;top:71%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온산읍</span>
+            <span class="pl" style="left:36%;top:80%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>웅촌면</span>
+            <span class="pl" style="left:60%;top:87%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온양읍</span>
+            <span class="pl" style="left:84%;top:94%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>서생면</span>
+            <span class="pl c" style="left:44%;top:58%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼동면<small>센터</small></span>
+          </div>
+        </div>
+        <div class="card area-info">
+          <div class="big-num">12<small>개 읍·면 모두 방문</small></div>
+          <p>울산 울주군 어느 읍·면에 사시든 똑같이 찾아갑니다. <span class="nw">상북·두서</span> 같은 산마을부터 <span class="nw">온산·서생</span> 같은 바닷가 마을까지, 어디든 기꺼이 찾아가겠습니다.</p>
+          <div class="legend"><span><span class="dot" style="background:var(--apricot)"></span>센터</span><span><svg width="22" height="6" aria-hidden="true"><line x1="1" y1="3" x2="21" y2="3" stroke="#8FC3A5" stroke-width="2" stroke-dasharray="4 4"/></svg>방문하는 읍·면 (12곳 모두)</span></div>
+          <p class="fine">지도는 위치를 단순하게 나타낸 그림입니다. 울산 울주군이 아니시더라도 궁금하신 점은 편하게 연락 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head"><span class="eyebrow">믿고 맡기실 수 있도록</span><h2>가족처럼 믿고 맡기실 수 있게 하겠습니다</h2><p>어르신 댁에 들어가는 일이기에, 처음 만나는 날부터 매일의 방문까지 센터가 끝까지 책임집니다.</p></div>
       <div class="care">
@@ -480,39 +530,7 @@ footer address{font-style:normal;line-height:1.75}
     </div>
   </section>
 
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">찾아가는 지역</span><h2>울주군 <span class="nw">12개 읍·면</span> 어디든 찾아갑니다</h2></div>
-      <div class="area">
-        <div class="card map-card">
-          <div class="map" role="img" aria-label="삼동면 센터에서 울주군 12개 읍·면 모두로 방문합니다.">
-            <svg class="rays" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <g stroke="#8FC3A5" stroke-width="1.6" stroke-dasharray="4 5" fill="none" stroke-linecap="round"><line x1="44" y1="58" x2="52" y2="10" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="20" y2="22" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="80" y2="20" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="28" y2="40" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="62" y2="36" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="17" y2="64" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="74" y2="54" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="83" y2="71" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="36" y2="80" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="60" y2="87" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="84" y2="94" vector-effect="non-scaling-stroke"/></g>
-            </svg>
-            <span class="pl" style="left:52%;top:10%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두서면</span>
-            <span class="pl" style="left:20%;top:22%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>상북면</span>
-            <span class="pl" style="left:80%;top:20%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두동면</span>
-            <span class="pl" style="left:28%;top:40%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>언양읍</span>
-            <span class="pl" style="left:62%;top:36%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>범서읍</span>
-            <span class="pl" style="left:17%;top:64%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼남읍</span>
-            <span class="pl" style="left:74%;top:54%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>청량읍</span>
-            <span class="pl" style="left:83%;top:71%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온산읍</span>
-            <span class="pl" style="left:36%;top:80%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>웅촌면</span>
-            <span class="pl" style="left:60%;top:87%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온양읍</span>
-            <span class="pl" style="left:84%;top:94%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>서생면</span>
-            <span class="pl c" style="left:44%;top:58%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼동면<small>센터</small></span>
-          </div>
-        </div>
-        <div class="card area-info">
-          <div class="big-num">12<small>개 읍·면 모두 방문</small></div>
-          <p>울주군 어느 읍·면에 사시든 똑같이 찾아갑니다. <span class="nw">상북·두서</span> 같은 산마을부터 <span class="nw">온산·서생</span> 같은 바닷가 마을까지, 어디든 기꺼이 찾아가겠습니다.</p>
-          <div class="legend"><span><span class="dot" style="background:var(--apricot)"></span>센터</span><span><svg width="22" height="6" aria-hidden="true"><line x1="1" y1="3" x2="21" y2="3" stroke="#8FC3A5" stroke-width="2" stroke-dasharray="4 4"/></svg>방문하는 읍·면 (12곳 모두)</span></div>
-          <p class="fine">지도는 위치를 단순하게 나타낸 그림입니다. 울주군이 아니시더라도 궁금하신 점은 편하게 연락 주세요.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <section class="sec" style="padding-top:0">
     <div class="wrap">
       <div class="band">
@@ -536,14 +554,14 @@ footer address{font-style:normal;line-height:1.75}
       <div class="intro">
         <div class="card greet"><img class="greet-ill" src="img/il-greet.jpg" width="1168" height="880" alt="센터장이 밝은 사무실 책상 옆에서 웃으며 손님을 맞이하는 그림">
           <p class="quote">익숙한 집에서 오래도록 편안하게 지내실 수 있도록 곁에 있겠습니다.</p>
-          <p class="body">삼동노인복지지원센터는 울주군 삼동면에 문을 연 방문요양 기관입니다. 몸이 불편해지셔도 정든 집과 마을에서 지내고 싶으신 어르신의 마음을 지키는 일을 합니다. 요양보호사 한 분 한 분을 꼼꼼히 뽑고 가르쳐, 가족처럼 믿고 맡기실 수 있는 돌봄을 약속드립니다.</p>
+          <p class="body">삼동노인복지지원센터는 울산 울주군 삼동면에 문을 연 방문요양 기관입니다. 몸이 불편해지셔도 정든 집과 마을에서 지내고 싶으신 어르신의 마음을 지키는 일을 합니다. 요양보호사 한 분 한 분을 꼼꼼히 뽑고 가르쳐, 가족처럼 믿고 맡기실 수 있는 돌봄을 약속드립니다.</p>
           <div class="sign"><span>센터장 · 사회복지사</span><b>박옥희</b></div>
         </div>
         <div class="card facts">
           <dl>
             <div><dt>기관명</dt><dd>삼동노인복지지원센터</dd></div>
             <div><dt>기관 구분</dt><dd>재가장기요양기관 (방문요양)</dd></div>
-            <div><dt>지정</dt><dd>울주군 지정 노인장기요양보험 장기요양기관</dd></div>
+            <div><dt>지정</dt><dd>울산 울주군 지정 노인장기요양보험 장기요양기관</dd></div>
             <div><dt>센터장</dt><dd>박옥희 (사회복지사)</dd></div>
             <div><dt>소재지</dt><dd>울산광역시 울주군 삼동면 <span class="nw">삼동로 780, 1층 102호</span></dd></div>
             <div><dt>대표전화</dt><dd>052-254-7115</dd></div>
@@ -659,7 +677,7 @@ footer address{font-style:normal;line-height:1.75}
         <h3>자주 물으시는 것</h3>
         <div class="faq">
           <details><summary><span class="q">Q</span><span class="qt">등급이 없는데 상담만 받아도 되나요?</span></summary><p><span class="a">A</span>네, 됩니다. 등급을 받으실 수 있을지, 어떻게 신청하면 되는지부터 편하게 여쭤보세요. 상담했다고 꼭 이용하셔야 하는 것은 아닙니다.</p></details>
-          <details><summary><span class="q">Q</span><span class="qt">삼동면이 아닌데도 와 주시나요?</span></summary><p><span class="a">A</span>네. 언양, 범서, 온양, 서생 등 울주군 12개 읍·면을 모두 방문합니다.</p></details>
+          <details><summary><span class="q">Q</span><span class="qt">삼동면이 아닌데도 와 주시나요?</span></summary><p><span class="a">A</span>네. 언양, 범서, 온양, 서생 등 울산 울주군 12개 읍·면을 모두 방문합니다.</p></details>
           <details><summary><span class="q">Q</span><span class="qt">자녀가 대신 문의해도 되나요?</span></summary><p><span class="a">A</span>물론입니다. 멀리 사시는 자녀분이 먼저 연락 주셔도 어르신 상황에 맞춰 안내해 드립니다.</p></details>
           <details><summary><span class="q">Q</span><span class="qt">불편한 점이 생기면 어디에 말하나요?</span></summary><p><span class="a">A</span>센터로 전화하시거나 문자를 남겨 주세요. 접수된 의견은 빠르게 확인하고 처리 결과를 직접 알려드립니다.</p></details>
         </div>
@@ -751,7 +769,7 @@ footer address{font-style:normal;line-height:1.75}
         <h2>이런 분을 찾습니다</h2>
         <ul>
           <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span><b>요양보호사 자격증</b>이 <span class="nw">있으신 분</span></span></li>
-          <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span><b>울주군</b>에서 <span class="nw">일하실 수 있는 분</span></span></li>
+          <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span><b>울산 울주군</b>에서 <span class="nw">일하실 수 있는 분</span></span></li>
           <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span>어르신을 <b>존중하고 성실하게</b> <span class="nw">돌보실 분</span></span></li>
         </ul>
         <p>신입도 경력도 환영합니다.</p>
@@ -798,7 +816,7 @@ footer address{font-style:normal;line-height:1.75}
 <footer>
   <div class="wrap">
     <div class="flogo"><svg width="40" height="40" aria-hidden="true"><use href="#logo-mark"/></svg><span class="logo-txt"><b>삼동노인복지지원센터</b><small>울산 울주군 지정 장기요양기관</small></span></div>
-    <address>울주군 지정 노인장기요양보험 장기요양기관 (방문요양) · 센터장 박옥희<br>울산광역시 울주군 삼동면 삼동로 780, 1층 102호<br>전화 052-254-7115 · 팩스 052-264-7115 · samdong.senior@gmail.com</address>
+    <address>울산 울주군 지정 노인장기요양보험 장기요양기관 (방문요양) · 센터장 박옥희<br>울산광역시 울주군 삼동면 삼동로 780, 1층 102호<br>전화 052-254-7115 · 팩스 052-264-7115 · samdong.senior@gmail.com</address>
   </div>
 </footer>
 
