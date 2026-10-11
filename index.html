@@ -1,0 +1,863 @@
+<title>삼동노인복지지원센터</title>
+<meta name="description" content="울주군에서 지정한 노인장기요양보험 장기요양기관. 울산 울주군 12개 읍·면 어디든 방문요양, 장기요양등급 신청 안내. 삼동노인복지지원센터 052-254-7115">
+<link rel="canonical" href="https://www.samdongcare.kr/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.samdongcare.kr/">
+<meta property="og:title" content="삼동노인복지지원센터 | 울주군 지정 방문요양">
+<meta property="og:description" content="울주군 12개 읍·면 어디든 어르신 댁으로 찾아갑니다. 장기요양등급 신청 안내부터 도와드려요. 052-254-7115">
+<meta property="og:image" content="https://www.samdongcare.kr/img/il-hero.jpg">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* 레이아웃: 위쪽 메뉴로 나뉜 5개 화면. 밝은 바탕 위 흰 카드, 넉넉한 여백, 직접 눌러보는 도구 두 가지(간단 확인·비용 계산).
+   색: 신뢰를 주는 숲빛 초록 하나를 주색으로, 살구색은 하트·포인트에만 아껴 씀. 바탕은 초록 기운이 살짝 도는 밝은 회색.
+   밝은 화면 하나로만 디자인했습니다(다크 모드 없음). */
+:root{
+  --ground:#F6F7F5; --card:#FFFFFF; --tint:#E8F2EC; --tint2:#F3F8F5; --apricot-soft:#FFF1E2;
+  --ink:#1B1F24; --sub:#4F5862; --muted:#87909A; --line:#E6E9E7;
+  --green:#1B7350; --green-deep:#12553A; --green-light:#2E9467;
+  --apricot:#F2994A; --apricot-ink:#A9520F;
+  --shadow:0 1px 2px rgba(20,40,30,.04),0 8px 24px rgba(20,40,30,.06);
+  --font:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:120px}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{margin:0;line-height:1.32;text-wrap:balance;letter-spacing:-.025em}
+h2{font-size:clamp(24px,3.4vw,30px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+p{margin:0;text-wrap:pretty}
+.nw{white-space:nowrap}
+a{color:var(--green-deep)}
+a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visible{outline:3px solid var(--apricot);outline-offset:3px;border-radius:8px}
+.card{background:var(--card);border-radius:22px;box-shadow:var(--shadow)}
+.eyebrow{font-size:14px;font-weight:700;color:var(--green);letter-spacing:.02em}
+.sec{padding-block:40px}
+.sec-head{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
+.sec-head p{color:var(--sub);font-size:17px;max-width:34em}
+
+/* 상단 */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(255,255,255,.95);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:20px;min-height:70px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.logo svg{display:block;flex-shrink:0}
+.logo-txt{display:flex;flex-direction:column;line-height:1.2}
+.logo-txt b{font-size:17px;font-weight:800;letter-spacing:-.035em}
+.logo-txt small{font-size:12px;color:var(--muted);font-weight:500}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--sub);font-weight:500;font-size:16px;padding:8px 14px;border-radius:10px;white-space:nowrap}
+.nav a:hover{background:#F1F3F2;color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--green-deep);font-weight:700;background:var(--tint)}
+.call-round{width:44px;height:44px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#FFFFFF}
+.call-round:hover{background:var(--green-deep)}
+
+/* 버튼 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 22px;border-radius:15px;font-weight:700;font-size:17px;text-decoration:none;font-family:inherit;border:0;cursor:pointer;white-space:nowrap}
+.btn.pri{background:var(--green);color:#FFFFFF}
+.btn.pri:hover{background:var(--green-deep)}
+.btn.sec{background:#EFF2F0;color:var(--ink)}
+.btn.sec:hover{background:#E4E9E6}
+.btn.line{background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+
+/* 홈: 첫 화면 */
+.hero{padding-block:28px 8px}
+.hero-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:center;padding:44px 44px 40px;background:#FFFFFF;overflow:hidden}
+.badge{display:inline-flex;align-items:center;gap:7px;background:var(--tint);color:var(--green-deep);font-weight:700;font-size:14px;padding:6px 13px 6px 9px;border-radius:999px}
+.hero h1{margin-top:18px;font-size:clamp(31px,5vw,46px);font-weight:800;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero-lead{margin-top:14px;font-size:18px;color:var(--sub);max-width:27em}
+.cta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+.hero-card{padding:0;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.hero-card > div:first-child{padding:44px 40px 40px 44px}
+.hero-photo{height:100%;min-height:420px;position:relative}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:50% 55%;display:block}
+.care{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px;align-items:stretch}
+.care-photo{border-radius:22px;overflow:hidden;min-height:320px;position:relative;box-shadow:var(--shadow);background:#FFFFFF}
+.care-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.care-list{list-style:none;margin:0;padding:8px 24px;background:var(--card);border-radius:22px;box-shadow:var(--shadow)}
+.care-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:start;padding-block:18px;border-bottom:1px solid var(--line)}
+.care-list li:last-child{border-bottom:0}
+.care-list .seal{width:44px;height:44px}
+.care-list b{font-size:17.5px}
+.care-list p{margin-top:3px;color:var(--sub);font-size:15.5px}
+.more{margin-top:14px;display:inline-flex;align-items:center;gap:4px;font-weight:700;font-size:15.5px;color:var(--green);text-decoration:none}
+
+.proof{margin-top:12px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.proof .card{padding:20px;display:flex;flex-direction:column;gap:10px;border-radius:18px}
+.verify-line{margin-top:14px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:14.5px;color:var(--muted)}
+.verify-line svg{color:var(--green);flex-shrink:0}
+.verify-line a{font-weight:700}
+.verify-row{margin-top:12px;display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:14px;align-items:center;padding:18px 22px;border-radius:18px;text-decoration:none;color:var(--ink)}
+.verify-row:hover{box-shadow:inset 0 0 0 1.5px #CFE0D6,var(--shadow)}
+.vr-txt b{display:block;font-size:16.5px}
+.vr-txt span{display:block;font-size:14.5px;color:var(--sub);line-height:1.55}
+.vr-go{display:inline-flex;align-items:center;gap:4px;font-weight:700;font-size:15px;color:var(--green);white-space:nowrap}
+.proof b{font-size:16.5px;line-height:1.45}
+.proof span{font-size:14.5px;color:var(--sub);line-height:1.6}
+.seal{width:40px;height:40px;border-radius:12px;background:var(--tint);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--green)}
+
+/* 홈: 이용 흐름 */
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.flow .card{padding:24px;display:flex;flex-direction:column;gap:8px}
+.flow .num{font-size:13px;font-weight:800;color:var(--green);letter-spacing:.06em}
+.flow b{font-size:18.5px}
+.flow p{color:var(--sub);font-size:16px}
+
+/* 홈: 간단 확인 */
+.check{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;overflow:hidden}
+.check-l{padding:30px 32px}
+.check-l h2{font-size:clamp(22px,3vw,27px)}
+.check-l p.lead{margin-top:8px;color:var(--sub);font-size:16.5px}
+.opts{margin-top:18px;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:14px;background:#F4F6F5;cursor:pointer;font-size:16.5px;font-weight:500;user-select:none}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .box{width:24px;height:24px;border-radius:7px;background:#FFFFFF;box-shadow:inset 0 0 0 2px #C9D1CC;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:transparent}
+.opt input:checked + .box{background:var(--green);box-shadow:none;color:#FFFFFF}
+.opt:has(input:checked){background:var(--tint)}
+.check-r{background:var(--tint2);padding:30px 32px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.check-r .state{font-size:clamp(20px,2.8vw,24px);font-weight:800;line-height:1.45;letter-spacing:-.03em}
+.check-r .state em{font-style:normal;color:var(--green)}
+.check-r p{color:var(--sub);font-size:16px}
+.check-r .btn{align-self:flex-start;margin-top:6px}
+.fine{font-size:14px;color:var(--muted)}
+
+/* 처음이신가요 카드 */
+.quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qcard{display:flex;flex-direction:column;gap:6px;padding:24px 24px 22px;text-decoration:none;color:var(--ink);border:1.5px solid transparent;transition:border-color .15s}
+.qcard:hover{border-color:#D6DED9}
+.qcard img{width:92px;height:92px;object-fit:contain;margin:-8px 0 6px -10px}
+.qcard b{font-size:18.5px}
+.qcard span{font-size:15.5px;color:var(--sub)}
+.qcard i{font-style:normal;margin-top:10px;font-size:14.5px;font-weight:700;color:var(--green);display:flex;align-items:center;gap:4px}
+
+/* 찾아가는 지역 지도 */
+.area{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:12px;align-items:stretch}
+.map-card{padding:0;overflow:hidden}
+.map{position:relative;width:100%;aspect-ratio:4/3;max-width:100%;background:var(--tint2);overflow:hidden}
+.sea-label{position:absolute;right:3%;top:58%;transform:translateY(-50%);writing-mode:vertical-rl;font-size:12.5px;font-weight:700;letter-spacing:.3em;color:#6E9CB8}
+.mtn-label{position:absolute;left:6%;top:6%;font-size:12px;font-weight:500;color:var(--muted)}
+.map svg.rays{position:absolute;inset:0;width:100%;height:100%}
+.pl{position:absolute;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:5px;background:#FFFFFF;border-radius:999px;padding:5px 11px 5px 8px;font-size:14.5px;font-weight:700;white-space:nowrap;box-shadow:0 1px 2px rgba(20,40,30,.08),0 2px 8px rgba(20,40,30,.06);color:var(--ink)}
+.pl svg{color:var(--green);flex-shrink:0}
+.pl.c small{margin-left:3px;font-size:11.5px;font-weight:700;color:#FFFFFF;background:var(--apricot);border-radius:999px;padding:0 7px;line-height:18px}
+.area-info{padding:28px 30px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.big-num{font-size:clamp(40px,6vw,56px);font-weight:800;color:var(--green);letter-spacing:-.04em;line-height:1}
+.big-num small{font-size:20px;color:var(--ink);font-weight:700;margin-left:4px;letter-spacing:-.02em}
+.area-info p{color:var(--sub);font-size:16.5px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+/* 상담 띠 */
+.band{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:28px 32px;background:var(--green-deep);color:#FFFFFF;border-radius:22px}
+.band b{font-size:clamp(20px,2.8vw,24px);font-weight:800;letter-spacing:-.02em;display:block;text-wrap:balance}
+.band p{margin-top:4px;color:#D5E6DC;font-size:16px}
+.band .btn.pri{background:#FFFFFF;color:var(--green-deep)}
+
+/* 센터 소개 */
+.intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:12px}
+.greet{padding:32px 34px}
+.greet-ill{display:block;width:100%;max-width:380px;height:auto;margin:-10px 0 10px -12px}
+.intro{align-items:start;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.greet{display:flex;flex-direction:column}
+.greet .quote{font-size:clamp(21px,2.8vw,26px);font-weight:800;line-height:1.5;letter-spacing:-.03em;color:var(--green-deep);text-wrap:balance}
+.greet p.body{margin-top:16px;color:var(--sub);font-size:17px}
+.sign{margin-top:22px;display:flex;align-items:baseline;gap:10px}
+.sign span{font-size:15px;color:var(--muted)}
+.sign b{font-size:21px;letter-spacing:.14em}
+.facts{padding:26px 28px}
+.facts dl{margin:0}
+.facts dl div{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;padding-block:12px;border-bottom:1px solid var(--line)}
+.facts dl div:last-child{border-bottom:0}
+.facts dt{color:var(--muted);font-size:15px}
+.facts dd{margin:0;font-size:16px;font-weight:500}
+.trust.trust3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.join-h1{font-size:clamp(26px,3.6vw,38px)!important}
+.trust.trust3 .card{grid-template-columns:1fr;gap:12px}
+.seek{background:var(--card);border-radius:22px;padding:30px 32px;box-shadow:var(--shadow)}
+.seek h2{color:var(--ink)}
+.seek ul{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.seek li{background:#F4F6F5;border-radius:16px;padding:20px;font-size:18px;line-height:1.55;display:flex;flex-direction:column;gap:12px}
+.seek li svg{color:#FFFFFF;background:var(--green);border-radius:50%;padding:5px;width:32px;height:32px}
+.seek li b{color:var(--green-deep)}
+.seek p{margin-top:16px;color:var(--sub);font-size:16px}
+.trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.trust .card{padding:22px 24px;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:start}
+.trust .seal{width:44px;height:44px}
+.trust p{margin-top:4px;color:var(--sub);font-size:16px}
+.chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:var(--tint);color:var(--green-deep);border-radius:8px;padding:3px 11px;font-size:15px;font-weight:500;white-space:nowrap}
+.pad{padding:24px 28px}
+
+/* 이용 안내 */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tabs a{text-decoration:none;color:var(--sub);background:var(--card);box-shadow:var(--shadow);padding:9px 16px;border-radius:999px;font-weight:500;font-size:15.5px;white-space:nowrap}
+.tabs a:hover{color:var(--ink)}
+.panel{padding:28px 30px}
+.panel + .panel{margin-top:12px}
+.panel h3{font-size:21px;margin-bottom:16px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--tint);color:var(--green-deep);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+.steps li.us::before{background:var(--green);color:#FFFFFF}
+.steps b{display:block;font-size:17.5px}
+.steps span{color:var(--sub);font-size:16px}
+.tag{display:inline-block;margin-left:6px;font-size:12.5px;font-weight:700;color:var(--green-deep);background:var(--tint);border-radius:6px;padding:1px 8px;vertical-align:2px;white-space:nowrap}
+.small-print{margin-top:16px;display:grid;gap:8px;font-size:14px;line-height:1.7;color:var(--muted)}
+.small-print b{color:var(--sub);font-weight:700}
+.note-box{margin-top:18px;background:#F4F6F5;border-radius:14px;padding:14px 18px;font-size:15.5px;color:var(--sub)}
+
+/* 비용 계산 */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:stretch}
+.field{display:flex;flex-direction:column;gap:8px}
+.field + .field{margin-top:18px}
+.field label,.field legend{font-size:15px;font-weight:700;color:var(--sub);padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg label{position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:46px;padding:0 14px;border-radius:12px;background:#F1F3F2;font-weight:700;font-size:16px;color:var(--ink);white-space:nowrap}
+.seg input:checked + span{background:var(--green);color:#FFFFFF}
+.result{background:var(--tint2);border-radius:18px;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.result .lbl{font-size:15px;color:var(--sub);font-weight:500}
+.result .amt{font-size:clamp(34px,5vw,44px);font-weight:800;color:var(--green-deep);letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1.15}
+.result .amt small{font-size:20px;margin-left:2px}
+.result .meta{font-size:15px;color:var(--sub)}
+.table-wrap{overflow-x:auto;margin-top:20px}
+table{width:100%;border-collapse:collapse;font-size:16px;font-variant-numeric:tabular-nums}
+th,td{padding:11px 10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:13.5px;color:var(--muted);font-weight:500}
+td b{color:var(--green-deep)}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.svc > div{background:#F4F6F5;border-radius:14px;padding:14px 18px 14px 14px;display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:center}
+.svc img{width:76px;height:76px;border-radius:12px;object-fit:cover;background:#FFFFFF}
+.svc b{font-size:17.5px}
+.svc p{margin-top:4px;font-size:15.5px;color:var(--sub)}
+.faq{display:grid;gap:8px}
+.faq details{background:#F4F6F5;border-radius:14px;padding:0 20px}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:17px;padding-block:16px;display:flex;align-items:center;gap:12px}
+.faq .qt{flex:1}
+.faq .q,.faq .a{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;font-size:15px;font-weight:800;flex-shrink:0}
+.faq .q{background:var(--green);color:#FFFFFF}
+.faq .a{background:#FFF1E2;color:var(--apricot-ink);margin-right:10px;float:left}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:9px;height:9px;border-right:2.5px solid var(--muted);border-bottom:2.5px solid var(--muted);transform:rotate(45deg);flex-shrink:0;margin-top:-4px}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+.faq details p{padding-bottom:16px;color:var(--sub);font-size:16px}
+
+/* 문의 */
+.contact{padding:32px}
+.contact-lead{font-size:clamp(21px,3vw,25px);font-weight:800;letter-spacing:-.03em;text-wrap:balance}
+.contact-sub{margin-top:6px;color:var(--sub);font-size:16.5px}
+.actions{margin-top:24px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.act{display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none;color:var(--ink);padding:20px 8px 16px;border-radius:18px;background:#F4F6F5;text-align:center;min-width:0}
+.act:hover{background:var(--tint)}
+.bub{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green);color:#FFFFFF}
+.act.alt .bub{background:var(--apricot)}
+.act.soft .bub{background:#FFFFFF;box-shadow:inset 0 0 0 1.5px var(--line);color:var(--green)}
+.act b{font-size:16px;line-height:1.3}
+.act small{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;line-height:1.35;overflow-wrap:anywhere}
+.ask{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ask .card{padding:22px 22px 20px}
+.ask b{font-size:17px}
+.ask p{margin-top:6px;font-size:15.5px;color:var(--sub)}
+
+/* 찾아오는 길 */
+.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.addr-card{padding:28px 30px;display:flex;flex-direction:column;gap:18px}
+.addr-card .big{font-size:20px;font-weight:700;line-height:1.55}
+.map-links{display:flex;gap:8px;flex-wrap:wrap}
+
+footer{padding-block:34px 44px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);margin-top:20px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .flogo{display:flex;align-items:center;gap:10px;color:var(--sub)}
+footer .flogo b{font-size:15px}
+footer address{font-style:normal;line-height:1.75}
+
+.toast[hidden]{display:none!important}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:30;background:var(--ink);color:#FFFFFF;border-radius:16px;padding:14px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,.2);max-width:calc(100% - 32px);flex-wrap:wrap}
+.toast b{font-size:22px;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.toast span{font-size:14.5px;color:#C9D1CD}
+.toast button{font:inherit;font-size:14.5px;font-weight:700;border:0;border-radius:10px;padding:7px 12px;background:#FFFFFF;color:var(--ink);cursor:pointer}
+[data-page][hidden]{display:none!important}
+.dock{display:none}
+
+@media (max-width:900px){
+  .bar{flex-wrap:wrap;gap:0;padding-top:10px}
+  .nav{order:3;width:100%;margin:6px 0 0;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .call-round{margin-left:auto}
+  html{scroll-padding-top:140px}
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .quick,.ask,.flow{grid-template-columns:1fr}
+  .hero-card{grid-template-columns:1fr}
+  .hero-photo{order:-1;min-height:0;aspect-ratio:16/10}
+  .intro,.loc,.area,.check,.calc,.care{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .sec{padding-block:30px}
+  .hero{padding-block:18px 4px}
+  .hero-card{grid-template-columns:1fr}
+  .hero-card > div:first-child{padding:24px 22px 26px}
+  .hero-photo{order:-1;min-height:0;aspect-ratio:4/3}
+  .care-photo{min-height:0;aspect-ratio:4/3}
+  .care-list{padding:4px 18px}
+  .cta .btn{flex:1 1 auto}
+  .trust,.svc,.trust.trust3,.seek ul{grid-template-columns:1fr}
+  .seek{padding:24px 22px}
+  .proof{grid-template-columns:1fr;gap:8px}
+  .proof .card{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:14px;row-gap:2px;padding:16px 18px}
+  .proof .seal{grid-row:span 2}
+  .proof b br{display:none}
+  .nav a{padding:8px 11px;font-size:15.5px}
+  .actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .band{grid-template-columns:1fr;padding:24px}
+  .band .btn{justify-self:start}
+  .panel,.contact,.greet,.facts,.addr-card,.pad,.check-l,.check-r,.area-info{padding:22px 20px}
+  .map-card{padding:10px}
+  .map{aspect-ratio:1/1}
+  .verify-row{grid-template-columns:40px minmax(0,1fr)}
+  .vr-go{grid-column:2}
+  .greet-ill{max-width:260px}
+  .mtn-label{display:none}
+  .pl{font-size:13.5px;padding:5px 10px 5px 7px}
+  .pl.c small{display:none}
+  .call-round{display:none}
+  .dock{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+  .dock .btn{flex:1;min-height:54px}
+  footer{padding-bottom:110px}
+}
+@media (max-width:360px){.proof{grid-template-columns:1fr}.pl{font-size:12.5px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<!-- 아이콘·로고 묶음 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E9467"/><stop offset="1" stop-color="#12553A"/></linearGradient>
+  </defs>
+  <!-- 로고: 둥근 사각형 안에 지붕을 이루는 두 사람(돌보는 사람과 어르신)과, 그 아래 살구색 하트 -->
+  <symbol id="logo-mark" viewBox="0 0 48 48">
+    <rect width="48" height="48" rx="14" fill="url(#g-mark)"/>
+    <circle cx="16.5" cy="13.2" r="3.4" fill="#FFFFFF"/>
+    <circle cx="31.5" cy="13.2" r="3.4" fill="#FFD3A8"/>
+    <path d="M8.5 27.5 L19.2 19.4 Q24 16 28.8 19.4 L39.5 27.5" fill="none" stroke="#FFFFFF" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 38.6c-.5 0-8.4-4.8-8.4-10.4a4.5 4.5 0 0 1 8.4-2.3 4.5 4.5 0 0 1 8.4 2.3c0 5.6-7.9 10.4-8.4 10.4z" fill="#F2994A"/>
+    <path d="M24 33.2c1.2-2.5 3.2-3.7 5.3-3.7-.6 2.7-2.6 4-5.3 3.7z" fill="#FFF1E2"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></g></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"/><path d="M7 9v5c0 1.7 2.2 3 5 3s5-1.3 5-3V9"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 13l2 2 3-4"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".16"/><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.5l3 3 6-6.5"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="삼동노인복지지원센터 홈">
+      <svg width="42" height="42" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span class="logo-txt"><b>삼동노인복지지원센터</b><small>울산 울주군 지정 장기요양기관</small></span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#home">홈</a>
+      <a href="#about">센터 소개</a>
+      <a href="#guide">이용 안내</a>
+      <a href="#contact">문의</a>
+      <a href="#location">찾아오는 길</a>
+      <a href="#join">요양보호사 지원</a>
+    </nav>
+    <a class="call-round" href="tel:0522547115" aria-label="센터에 전화 걸기"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg></a>
+  </div>
+</header>
+
+<main>
+
+<!-- ───────── 홈 ───────── -->
+<div data-page="home" id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="card hero-card">
+        <div>
+          <span class="badge"><svg width="18" height="18" aria-hidden="true"><use href="#i-shield"/></svg>울주군 지정 노인장기요양보험 장기요양기관</span>
+          <h1>울주군 어디든<br><em>어르신 댁으로</em> 찾아갑니다</h1>
+          <p class="hero-lead">국가자격을 갖춘 요양보호사가 댁을 찾아가 식사와 위생, 일상생활을 돕습니다. 장기요양등급이 아직 없으셔도 <span class="nw">신청 방법부터</span> 차근차근 안내해 드려요.</p>
+          <div class="cta">
+            <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화 상담하기</a>
+            <a class="btn sec" href="#check">받을 수 있는지 확인</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="img/il-hero.jpg" width="1168" height="880" alt="요양보호사가 거실에서 어르신께 차를 따라 드리며 함께 웃는 그림">
+        </div>
+      </div>
+
+      <div class="proof">
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-shield"/></svg></div><b>울주군 지정<br>장기요양기관</b><span>노인장기요양보험법에 따라 <span class="nw">울주군에서 지정한</span> 기관입니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-card"/></svg></div><b>노인장기요양보험<br>급여 적용</b><span>비용의 85~100%를 장기요양보험에서 지원합니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-user"/></svg></div><b>국가자격<br>요양보호사</b><span>요양보호사 자격증을 가진 분만 어르신 댁을 방문합니다</span></div>
+        <div class="card"><div class="seal"><svg width="21" height="21" aria-hidden="true"><use href="#i-cap"/></svg></div><b>사회복지사<br>센터장 직접 운영</b><span>사회복지사인 센터장이 서비스를 직접 살핍니다</span></div>
+      </div>
+      <p class="verify-line"><svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>지정 기관인지는 국민건강보험공단 <a href="https://longtermcare.or.kr/npbs/t/z/150/selectLtcoInfoList" target="_blank" rel="noopener">장기요양기관 찾기</a>에서 직접 확인하실 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">믿고 맡기실 수 있도록</span><h2>가족처럼 믿고 맡기실 수 있게 하겠습니다</h2><p>어르신 댁에 들어가는 일이기에, 처음 만나는 날부터 매일의 방문까지 센터가 끝까지 책임집니다.</p></div>
+      <div class="care">
+        <div class="care-photo"><img src="img/il-trust.jpg" width="1168" height="880" alt="요양보호사가 지팡이를 짚은 할아버지의 팔을 잡고 산 아래 논길을 함께 걷는 그림" loading="lazy"></div>
+        <ol class="care-list">
+          <li><span class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-doc"/></svg></span><div><b>믿을 수 있는 분만 보내 드립니다</b><p>자격증 원본과 노인학대·성범죄 관련 결격 사유를 확인한 요양보호사만 방문합니다.</p></div></li>
+          <li><span class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-cap"/></svg></span><div><b>해마다 돌봄 교육을 받습니다</b><p>노인 인권, 치매 돌봄, 응급처치 등 법으로 정해진 교육을 빠짐없이 이수합니다.</p></div></li>
+          <li><span class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-heart"/></svg></span><div><b>건강한 몸과 마음으로 찾아갑니다</b><p>모든 직원이 해마다 결핵 검진을 포함한 건강검진을 받습니다.</p></div></li>
+          <li><span class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></span><div><b>센터장이 직접 살핍니다</b><p>방문 시각을 빠짐없이 기록하고, 사회복지사인 센터장이 어르신과 가족께 수시로 여쭙고 확인합니다.</p></div></li>
+        </ol>
+      </div>
+      <a class="more" href="#about">센터 소개에서 더 보기<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" id="check">
+    <div class="wrap">
+      <div class="card check">
+        <div class="check-l">
+          <span class="eyebrow">30초 확인</span>
+          <h2>우리 부모님도 받으실 수 있을까요?</h2>
+          <p class="lead">해당하는 것을 눌러 보세요.</p>
+          <div class="opts" id="opts">
+            <label class="opt"><input type="checkbox" id="c1"><span class="box"><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></span>혼자 목욕하거나 씻기가 어려우세요</label>
+            <label class="opt"><input type="checkbox" id="c2"><span class="box"><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></span>식사 준비나 집안일이 힘드세요</label>
+            <label class="opt"><input type="checkbox" id="c3"><span class="box"><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></span>걷거나 화장실 가기가 불편하세요</label>
+            <label class="opt"><input type="checkbox" id="c4"><span class="box"><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></span>깜빡하시는 일이 잦아 걱정되세요</label>
+            <label class="opt"><input type="checkbox" id="c5"><span class="box"><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></span>치매·중풍·파킨슨병 진단을 받으셨어요</label>
+          </div>
+        </div>
+        <div class="check-r" aria-live="polite">
+          <p class="state" id="checkState">해당하는 항목을 눌러 보시면<br>여기에 안내가 나옵니다.</p>
+          <p id="checkMsg">하나라도 해당하시면 장기요양등급을 받으실 수 있는지 상담해 보실 만합니다.</p>
+          <a class="btn pri" href="tel:0522547115" id="checkBtn"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화로 상담하기</a>
+          <p class="fine">이 확인은 참고용입니다. 등급은 국민건강보험공단의 방문 조사로 정해집니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">처음이신가요</span><h2>요양기관 이용이 처음이신가요?</h2></div>
+      <div class="quick">
+        <a class="card qcard" href="#grade"><img src="img/il-grade.jpg" width="512" height="512" alt=""><b>장기요양등급 신청 방법</b><span>누가 받을 수 있는지, 신청부터 판정까지</span><i>자세히 보기<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+        <a class="card qcard" href="#cost"><img src="img/il-cost.jpg" width="512" height="512" alt=""><b>비용은 얼마나 드나요</b><span>등급별 한도와 본인부담금 계산하기</span><i>계산해 보기<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+        <a class="card qcard" href="#service"><img src="img/il-svc.jpg" width="512" height="512" alt=""><b>어떤 도움을 받나요</b><span>요양보호사가 댁에서 하는 일</span><i>자세히 보기<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">찾아가는 지역</span><h2>울주군 <span class="nw">12개 읍·면</span> 어디든 찾아갑니다</h2></div>
+      <div class="area">
+        <div class="card map-card">
+          <div class="map" role="img" aria-label="삼동면 센터에서 울주군 12개 읍·면 모두로 방문합니다.">
+            <svg class="rays" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <g stroke="#8FC3A5" stroke-width="1.6" stroke-dasharray="4 5" fill="none" stroke-linecap="round"><line x1="44" y1="58" x2="52" y2="10" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="20" y2="22" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="80" y2="20" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="28" y2="40" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="62" y2="36" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="17" y2="64" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="74" y2="54" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="83" y2="71" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="36" y2="80" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="60" y2="87" vector-effect="non-scaling-stroke"/><line x1="44" y1="58" x2="84" y2="94" vector-effect="non-scaling-stroke"/></g>
+            </svg>
+            <span class="pl" style="left:52%;top:10%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두서면</span>
+            <span class="pl" style="left:20%;top:22%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>상북면</span>
+            <span class="pl" style="left:80%;top:20%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>두동면</span>
+            <span class="pl" style="left:28%;top:40%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>언양읍</span>
+            <span class="pl" style="left:62%;top:36%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>범서읍</span>
+            <span class="pl" style="left:17%;top:64%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼남읍</span>
+            <span class="pl" style="left:74%;top:54%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>청량읍</span>
+            <span class="pl" style="left:83%;top:71%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온산읍</span>
+            <span class="pl" style="left:36%;top:80%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>웅촌면</span>
+            <span class="pl" style="left:60%;top:87%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>온양읍</span>
+            <span class="pl" style="left:84%;top:94%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>서생면</span>
+            <span class="pl c" style="left:44%;top:58%"><svg width="15" height="15" aria-hidden="true"><use href="#i-ok"/></svg>삼동면<small>센터</small></span>
+          </div>
+        </div>
+        <div class="card area-info">
+          <div class="big-num">12<small>개 읍·면 모두 방문</small></div>
+          <p>울주군 어느 읍·면에 사시든 똑같이 찾아갑니다. <span class="nw">상북·두서</span> 같은 산마을부터 <span class="nw">온산·서생</span> 같은 바닷가 마을까지, 어디든 기꺼이 찾아가겠습니다.</p>
+          <div class="legend"><span><span class="dot" style="background:var(--apricot)"></span>센터</span><span><svg width="22" height="6" aria-hidden="true"><line x1="1" y1="3" x2="21" y2="3" stroke="#8FC3A5" stroke-width="2" stroke-dasharray="4 4"/></svg>방문하는 읍·면 (12곳 모두)</span></div>
+          <p class="fine">지도는 위치를 단순하게 나타낸 그림입니다. 울주군이 아니시더라도 궁금하신 점은 편하게 연락 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div><b>궁금한 점이 있으시면 편하게 연락 주세요</b><p>상담만 받으셔도 괜찮습니다. 자녀분이 대신 문의하셔도 됩니다.</p></div>
+        <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화 상담하기</a>
+      </div>
+      <a class="card verify-row" href="#join" style="margin-top:12px">
+        <svg width="40" height="40" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="vr-txt"><b>삼동노인복지지원센터와 함께할 요양보호사 선생님을 모집합니다</b><span>어르신의 하루가 조금 더 편안하도록, 일상을 곁에서 함께 돌봐 주실 선생님을 기다립니다.</span></span>
+        <span class="vr-go">지원 안내 보기<svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── 센터 소개 ───────── -->
+<div data-page="about" id="about" hidden>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">센터 소개</span><h2>어르신과 함께, 더 따뜻한 오늘</h2></div>
+      <div class="intro">
+        <div class="card greet"><img class="greet-ill" src="img/il-greet.jpg" width="1168" height="880" alt="센터장이 밝은 사무실 책상 옆에서 웃으며 손님을 맞이하는 그림">
+          <p class="quote">익숙한 집에서 오래도록 편안하게 지내실 수 있도록 곁에 있겠습니다.</p>
+          <p class="body">삼동노인복지지원센터는 울주군 삼동면에 문을 연 방문요양 기관입니다. 몸이 불편해지셔도 정든 집과 마을에서 지내고 싶으신 어르신의 마음을 지키는 일을 합니다. 요양보호사 한 분 한 분을 꼼꼼히 뽑고 가르쳐, 가족처럼 믿고 맡기실 수 있는 돌봄을 약속드립니다.</p>
+          <div class="sign"><span>센터장 · 사회복지사</span><b>박옥희</b></div>
+        </div>
+        <div class="card facts">
+          <dl>
+            <div><dt>기관명</dt><dd>삼동노인복지지원센터</dd></div>
+            <div><dt>기관 구분</dt><dd>재가장기요양기관 (방문요양)</dd></div>
+            <div><dt>지정</dt><dd>울주군 지정 노인장기요양보험 장기요양기관</dd></div>
+            <div><dt>센터장</dt><dd>박옥희 (사회복지사)</dd></div>
+            <div><dt>소재지</dt><dd>울산광역시 울주군 삼동면 <span class="nw">삼동로 780, 1층 102호</span></dd></div>
+            <div><dt>대표전화</dt><dd>052-254-7115</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="note-box" style="margin-top:12px">지정 여부는 국민건강보험공단 노인장기요양보험 누리집의 <a href="https://longtermcare.or.kr/npbs/t/z/150/selectLtcoInfoList" target="_blank" rel="noopener">장기요양기관 찾기</a>에서 ‘삼동노인복지지원센터’를 검색해 확인하실 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">믿고 맡기실 수 있도록</span><h2>꼼꼼히 뽑고, 꾸준히 가르치고, 늘 살핍니다</h2></div>
+      <div class="trust">
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-doc"/></svg></div><div><h3>확인하고 채용합니다</h3><p>자격증 원본을 확인하고, 노인학대·성범죄 관련 결격 사유를 조회한 뒤에만 채용합니다.</p></div></div>
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-cap"/></svg></div><div><h3>해마다 교육받습니다</h3><p>노인 인권, 학대 예방, 치매 돌봄, 응급처치 등 매년 받아야 하는 교육을 빠짐없이 이수합니다.</p></div></div>
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-heart"/></svg></div><div><h3>건강한 사람이 갑니다</h3><p>모든 직원이 해마다 결핵 검진을 포함한 건강검진을 받습니다.</p></div></div>
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></div><div><h3>방문을 꼼꼼히 기록합니다</h3><p>도착과 종료 시각을 전자 태그로 기록하고, 센터장이 서비스 내용을 직접 확인합니다.</p></div></div>
+      </div>
+      <div class="card pad" style="margin-top:12px">
+        <b style="font-size:17px">요양보호사가 매년 받는 교육</b>
+        <div class="chips"><span>노인 인권</span><span>노인학대 예방·신고</span><span>치매·인지활동 돌봄</span><span>응급처치·심폐소생술</span><span>낙상·욕창 예방</span><span>감염 예방</span><span>개인정보 보호</span><span>직무 보수교육</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── 이용 안내 ───────── -->
+<div data-page="guide" id="guide" hidden>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">이용 안내</span><h2>방문요양, 이렇게 이용하세요</h2><p>전화 한 통이면 시작됩니다.</p></div>
+      <div class="flow">
+        <div class="card"><span class="num">STEP 1</span><b>전화로 상담</b><p>어르신 상황을 편하게 말씀해 주세요. 상담만 받으셔도 괜찮습니다.</p></div>
+        <div class="card"><span class="num">STEP 2</span><b>등급 신청 안내</b><p>등급이 없으시면 신청 방법과 준비할 서류를 알려드립니다.</p></div>
+        <div class="card"><span class="num">STEP 3</span><b>댁으로 방문 시작</b><p>원하시는 요일과 시간에 맞춰 요양보호사가 찾아갑니다.</p></div>
+      </div>
+      <div class="tabs" style="margin-top:20px"><a href="#grade">등급 신청</a><a href="#cost">비용 계산</a><a href="#service">서비스 내용</a><a href="#faq">자주 묻는 질문</a></div>
+
+      <div class="card panel" id="grade">
+        <h3>장기요양등급, 이렇게 받으실 수 있어요</h3>
+        <ol class="steps">
+          <li class="us"><div><b>센터에 전화 <span class="tag">센터가 도와드려요</span></b><span>어르신 상황을 듣고 등급 신청이 가능한지 함께 살펴봅니다.</span></div></li>
+          <li class="us"><div><b>신청 방법 안내 <span class="tag">센터가 도와드려요</span></b><span>신청서 작성 방법과 준비할 서류를 쉽게 알려드립니다.</span></div></li>
+          <li><div><b>공단에 신청하고 방문 조사 받기</b><span>본인이나 가족이 국민건강보험공단에 신청하면, 공단 직원이 댁을 방문해 어르신 상태를 살펴봅니다.</span></div></li>
+          <li><div><b>등급 결과 받기</b><span>공단은 보통 신청일부터 30일 안에 결과를 알려드립니다.</span></div></li>
+          <li class="us"><div><b>상담하고 서비스 시작 <span class="tag">센터가 도와드려요</span></b><span>원하시는 요일과 시간을 정해 요양보호사가 방문을 시작합니다.</span></div></li>
+        </ol>
+        <div class="note-box"><b>신청하실 수 있는 분</b> · 65세 이상으로 혼자 일상생활이 어려우신 분, 또는 65세 미만이라도 치매·중풍·파킨슨병 등 노인성 질환이 있으신 분</div>
+      </div>
+
+      <div class="card panel" id="cost">
+        <h3>한 달 본인부담금, 얼마나 될까요?</h3>
+        <div class="calc">
+          <div>
+            <fieldset class="field">
+              <legend>장기요양등급</legend>
+              <div class="seg" id="gradeSeg">
+                <label><input type="radio" name="g" value="2512900" id="g1"><span>1등급</span></label>
+                <label><input type="radio" name="g" value="2331200" id="g2"><span>2등급</span></label>
+                <label><input type="radio" name="g" value="1528200" id="g3" checked><span>3등급</span></label>
+                <label><input type="radio" name="g" value="1409700" id="g4"><span>4등급</span></label>
+                <label><input type="radio" name="g" value="1208900" id="g5"><span>5등급</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <legend>본인부담 구분</legend>
+              <div class="seg" id="rateSeg">
+                <label><input type="radio" name="r" value="0.15" id="r15" checked><span>일반 15%</span></label>
+                <label><input type="radio" name="r" value="0.09" id="r9"><span>감경 9%</span></label>
+                <label><input type="radio" name="r" value="0.06" id="r6"><span>감경 6%</span></label>
+                <label><input type="radio" name="r" value="0" id="r0"><span>기초수급 0%</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="result" aria-live="polite">
+            <span class="lbl">등급 한도까지 다 이용하셔도 한 달에 내시는 돈은</span>
+            <span class="amt" id="amt">229,230<small>원</small></span>
+            <span class="meta" id="meta">이 금액을 넘지 않습니다. 월 한도 1,528,200원 가운데 나머지는 장기요양보험에서 냅니다.</span>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>등급</th><th>2026년 월 한도액</th><th>일반 15% 최대 본인부담</th></tr></thead>
+            <tbody>
+              <tr><td>1등급</td><td>2,512,900원</td><td><b>376,935원</b></td></tr>
+              <tr><td>2등급</td><td>2,331,200원</td><td><b>349,680원</b></td></tr>
+              <tr><td>3등급</td><td>1,528,200원</td><td><b>229,230원</b></td></tr>
+              <tr><td>4등급</td><td>1,409,700원</td><td><b>211,455원</b></td></tr>
+              <tr><td>5등급</td><td>1,208,900원</td><td><b>181,335원</b></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note-box">실제 비용은 이용하신 시간만큼만 내시므로 이보다 적을 수 있습니다. 정확한 금액은 상담 때 계산해 드립니다.</div>
+        <div class="small-print">
+          <p><b>방문은 대략 이 정도입니다.</b> 하루 3시간 기준으로 1·2등급은 거의 매일, 3·4등급은 주 5~6일, 5등급은 주 5일 정도 한도 안에서 이용하실 수 있습니다. 실제 요일과 시간은 어르신 상황과 요양보호사 일정에 맞춰 상담으로 정합니다.</p>
+          <p><b>본인부담률은 공단이 정합니다.</b> 일반 15%, 건강보험료 순위 하위 25~50%이고 재산이 기준 이하이면 9%, 의료급여 수급권자(기초생활수급자 제외)나 하위 25% 이하이면 6%, 기초생활수급자는 면제입니다. 대부분 등급을 받으실 때 자동으로 적용되며, 정확한 구분은 국민건강보험공단(<span class="nw">1577-1000</span>)에서 확인하실 수 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="card panel" id="service">
+        <h3>요양보호사가 댁에서 도와드리는 일</h3>
+        <div class="svc">
+          <div><img src="img/il-s-body.jpg" width="384" height="384" alt=""><span><b>몸 돌봄</b><p>세면·목욕 도움, 식사 도움, 화장실 이용, 병원 등 외출 동행</p></span></div>
+          <div><img src="img/il-s-house.jpg" width="384" height="384" alt=""><span><b>살림 돌봄</b><p>식사 준비, 청소와 정리정돈, 빨래, 생필품 장보기</p></span></div>
+          <div><img src="img/il-s-heart.jpg" width="384" height="384" alt=""><span><b>마음 돌봄</b><p>말벗, 격려와 위로, 생활 고민 상담</p></span></div>
+          <div><img src="img/il-s-mind.jpg" width="384" height="384" alt=""><span><b>기억력 돌봄</b><p>치매 어르신 인지활동, 일상생활 함께하기</p></span></div>
+        </div>
+        <div class="note-box">이용 시간과 요일은 등급별 한도 안에서 어르신께 맞춰 정해 드립니다.</div>
+      </div>
+
+      <div class="card panel" id="faq">
+        <h3>자주 물으시는 것</h3>
+        <div class="faq">
+          <details><summary><span class="q">Q</span><span class="qt">등급이 없는데 상담만 받아도 되나요?</span></summary><p><span class="a">A</span>네, 됩니다. 등급을 받으실 수 있을지, 어떻게 신청하면 되는지부터 편하게 여쭤보세요. 상담했다고 꼭 이용하셔야 하는 것은 아닙니다.</p></details>
+          <details><summary><span class="q">Q</span><span class="qt">삼동면이 아닌데도 와 주시나요?</span></summary><p><span class="a">A</span>네. 언양, 범서, 온양, 서생 등 울주군 12개 읍·면을 모두 방문합니다.</p></details>
+          <details><summary><span class="q">Q</span><span class="qt">자녀가 대신 문의해도 되나요?</span></summary><p><span class="a">A</span>물론입니다. 멀리 사시는 자녀분이 먼저 연락 주셔도 어르신 상황에 맞춰 안내해 드립니다.</p></details>
+          <details><summary><span class="q">Q</span><span class="qt">불편한 점이 생기면 어디에 말하나요?</span></summary><p><span class="a">A</span>센터로 전화하시거나 문자를 남겨 주세요. 접수된 의견은 빠르게 확인하고 처리 결과를 직접 알려드립니다.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── 문의 ───────── -->
+<div data-page="contact" id="contact" hidden>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">문의</span><h2>언제든 편하게 연락 주세요</h2></div>
+      <div class="card contact">
+        <p class="contact-lead">궁금한 점이 하나라도 있으시면 눌러서 바로 연락하세요.</p>
+        <p class="contact-sub">전화를 못 받으면 문자를 남겨 주세요. 확인하는 대로 다시 연락드립니다.</p>
+        <div class="actions">
+          <a class="act" href="tel:0522547115"><span class="bub"><svg width="25" height="25" aria-hidden="true"><use href="#i-phone"/></svg></span><b>센터 전화</b><small>052-254-7115</small></a>
+          <a class="act alt" href="tel:01033484716"><span class="bub"><svg width="25" height="25" aria-hidden="true"><use href="#i-mobile"/></svg></span><b>센터장 휴대폰</b><small>010-3348-4716</small></a>
+          <a class="act soft" href="sms:01033484716"><span class="bub"><svg width="25" height="25" aria-hidden="true"><use href="#i-chat"/></svg></span><b>문자 남기기</b><small>센터장 휴대폰으로</small></a>
+          <a class="act soft" href="mailto:samdong.senior@gmail.com"><span class="bub"><svg width="25" height="25" aria-hidden="true"><use href="#i-mail"/></svg></span><b>이메일</b><small>samdong.senior<br>@gmail.com</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>연락 주시면 이렇게 진행됩니다</h2></div>
+      <div class="flow">
+        <div class="card"><span class="num">STEP 1</span><b>전화로 상담</b><p>어르신 상황을 편하게 말씀해 주세요. 상담만 받으셔도 괜찮습니다.</p></div>
+        <div class="card"><span class="num">STEP 2</span><b>등급 신청 안내</b><p>등급이 없으시면 신청 방법과 준비할 서류를 알려드립니다.</p></div>
+        <div class="card"><span class="num">STEP 3</span><b>댁으로 방문 시작</b><p>원하시는 요일과 시간에 맞춰 요양보호사가 찾아갑니다.</p></div>
+      </div>
+      <div class="sec-head" style="margin-top:36px"><h2>이런 것도 여쭤보셔도 됩니다</h2></div>
+      <div class="ask">
+        <div class="card"><b>등급을 받을 수 있을까요?</b><p>어르신 상태를 들려주시면 신청 가능 여부와 준비할 서류를 알려드립니다.</p></div>
+        <div class="card"><b>비용이 얼마나 나올까요?</b><p>등급과 원하시는 이용 시간을 알려주시면 본인부담금을 미리 계산해 드립니다.</p></div>
+        <div class="card"><b>불편한 점이 있어요</b><p>서비스 중 불편하신 점도 편하게 말씀해 주세요. 확인 후 처리 결과를 알려드립니다.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── 찾아오는 길 ───────── -->
+<div data-page="location" id="location" hidden>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">찾아오는 길</span><h2>센터 오시는 길</h2></div>
+      <div class="loc">
+        <div class="card addr-card">
+          <div><span class="eyebrow">주소</span><p class="big">울산광역시 울주군 삼동면<br>삼동로 780, 1층 102호</p></div>
+          <div class="map-links">
+            <a class="btn pri" href="https://map.naver.com/p/search/%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg>네이버 지도</a>
+            <a class="btn line" href="https://map.kakao.com/?q=%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" target="_blank" rel="noopener">카카오맵</a>
+          </div>
+        </div>
+        <div class="card addr-card">
+          <div><span class="eyebrow">센터 방문 상담</span><p style="margin-top:6px;color:var(--sub);font-size:16.5px">방문요양은 요양보호사가 어르신 댁으로 찾아갑니다. 센터에 직접 오셔서 상담받고 싶으시면 먼저 전화로 시간을 정해 주세요.</p></div>
+          <a class="btn sec" href="tel:0522547115" style="align-self:flex-start"><svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg>방문 전 전화하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ───────── 요양보호사 지원 ───────── -->
+<div data-page="join" id="join" hidden>
+  <section class="hero">
+    <div class="wrap">
+      <div class="card hero-card">
+        <div>
+          <span class="badge"><svg width="18" height="18" aria-hidden="true"><use href="#i-user"/></svg>요양보호사 모집</span>
+          <h1 class="join-h1"><span class="nw">삼동노인복지지원센터와</span><br>함께할 요양보호사<br>선생님을 모집합니다</h1>
+          <p class="hero-lead">어르신을 존중하는 마음이면 충분합니다. 신입도 경력도 환영합니다. 일하기 좋은 센터가 되도록 센터가 먼저 챙기겠습니다.</p>
+          <div class="cta">
+            <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화로 지원 문의</a>
+            <a class="btn sec" href="sms:01033484716"><svg width="21" height="21" aria-hidden="true"><use href="#i-chat"/></svg>문자로 문의</a>
+          </div>
+        </div>
+        <div class="hero-photo"><img src="img/il-recruit.jpg" width="1168" height="880" alt="요양보호사 세 분이 함께 웃으며 새 동료를 맞이하는 그림" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="seek">
+        <h2>이런 분을 찾습니다</h2>
+        <ul>
+          <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span><b>요양보호사 자격증</b>이 <span class="nw">있으신 분</span></span></li>
+          <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span><b>울주군</b>에서 <span class="nw">일하실 수 있는 분</span></span></li>
+          <li><svg width="26" height="26" aria-hidden="true"><use href="#i-ok"/></svg><span>어르신을 <b>존중하고 성실하게</b> <span class="nw">돌보실 분</span></span></li>
+        </ul>
+        <p>신입도 경력도 환영합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">함께 일하는 분들께</span><h2>센터가 이렇게 약속합니다</h2><p>운영규정에 정한 대로 지킵니다.</p></div>
+      <div class="trust trust3">
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-doc"/></svg></div><div><h3>표준근로계약서로 계약합니다</h3><p>근무시간과 급여를 계약서에 분명히 적고, 한 부를 바로 드립니다. 4대보험에 가입하고 퇴직금도 적립합니다.</p></div></div>
+        
+        
+        
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg></div><div><h3>선생님의 인권도 지킵니다</h3><p>일하다 겪는 부당한 말이나 행동은 센터에 알려 주세요. 센터가 나서서 해결하고 보호합니다.</p></div></div>
+        <div class="card"><div class="seal"><svg width="22" height="22" aria-hidden="true"><use href="#i-chat"/></svg></div><div><h3>고충을 듣는 창구가 있습니다</h3><p>어려운 점은 언제든 센터장에게 말씀해 주세요. 익명 고충함도 있고, 처리 결과를 꼭 알려드립니다.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="card panel">
+        <h3>지원 절차</h3>
+        <ol class="steps">
+          <li class="us"><div><b>전화나 문자로 문의</b><span>궁금한 점을 편하게 물어보셔도 되고, 바로 지원하셔도 됩니다.</span></div></li>
+          <li><div><b>면접</b><span>센터에서 센터장과 만나 근무 조건과 하는 일을 함께 이야기합니다.</span></div></li>
+          <li><div><b>자격 확인과 건강검진</b><span>요양보호사 자격증 원본을 확인하고, 결핵 검진이 포함된 건강검진 결과를 받습니다. 법에 따른 결격 사유 조회도 합니다.</span></div></li>
+          <li><div><b>근로계약과 첫 교육</b><span>표준근로계약서를 쓰고, 센터 운영규정과 급여제공지침 오리엔테이션을 받습니다.</span></div></li>
+          <li class="us"><div><b>어르신 댁 방문 시작</b><span>처음에는 센터장이 함께하며 어르신과 가족께 인사드립니다.</span></div></li>
+        </ol>
+              </div>
+      <div class="band" style="margin-top:12px">
+        <div><b>궁금한 점부터 물어보셔도 됩니다</b><p>급여와 근무시간은 상담 때 자세히 안내해 드립니다.</p></div>
+        <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>지원 문의하기</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo"><svg width="40" height="40" aria-hidden="true"><use href="#logo-mark"/></svg><span class="logo-txt"><b>삼동노인복지지원센터</b><small>울산 울주군 지정 장기요양기관</small></span></div>
+    <address>울주군 지정 노인장기요양보험 장기요양기관 (방문요양) · 센터장 박옥희<br>울산광역시 울주군 삼동면 삼동로 780, 1층 102호<br>전화 052-254-7115 · 팩스 052-264-7115 · samdong.senior@gmail.com</address>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="바로 연락하기">
+  <a class="btn pri" href="tel:0522547115"><svg width="21" height="21" aria-hidden="true"><use href="#i-phone"/></svg>전화 상담</a>
+  <a class="btn sec" href="sms:01033484716"><svg width="21" height="21" aria-hidden="true"><use href="#i-chat"/></svg>문자</a>
+</nav>
+
+<script>
+(function(){
+  /* 메뉴 화면 전환 */
+  var pages=[].slice.call(document.querySelectorAll('[data-page]'));
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  function route(){
+    var h=(location.hash||'#home').slice(1);
+    var target=document.getElementById(h);
+    var page=null;
+    if(target){page=target.hasAttribute('data-page')?target:target.closest('[data-page]');}
+    if(!page){page=pages[0];target=null;}
+    pages.forEach(function(p){p.hidden=p!==page;});
+    links.forEach(function(a){
+      if(a.getAttribute('href')==='#'+page.dataset.page){a.setAttribute('aria-current','page');}
+      else{a.removeAttribute('aria-current');}
+    });
+    if(target&&target!==page){target.scrollIntoView();}else{window.scrollTo(0,0);}
+  }
+  window.addEventListener('hashchange',route);
+  route();
+
+  /* 30초 확인 */
+  var boxes=[].slice.call(document.querySelectorAll('#opts input'));
+  var st=document.getElementById('checkState'), msg=document.getElementById('checkMsg');
+  function check(){
+    var n=boxes.filter(function(b){return b.checked;}).length;
+    if(n===0){
+      st.innerHTML='해당하는 항목을 눌러 보시면<br>여기에 안내가 나옵니다.';
+      msg.textContent='하나라도 해당하시면 장기요양등급을 받으실 수 있는지 상담해 보실 만합니다.';
+    }else{
+      st.innerHTML='<em>'+n+'가지</em>가 해당하세요.<br>등급 신청을 상담해 보세요.';
+      msg.textContent='이런 어려움이 있으시면 방문요양으로 도움을 받으실 수 있습니다. 신청 방법부터 센터가 안내해 드립니다.';
+    }
+  }
+  boxes.forEach(function(b){b.addEventListener('change',check);});
+
+  /* 비용 계산 */
+  var gs=[].slice.call(document.querySelectorAll('input[name="g"]'));
+  var rs=[].slice.call(document.querySelectorAll('input[name="r"]'));
+  var amt=document.getElementById('amt'), meta=document.getElementById('meta');
+  function fmt(n){return n.toLocaleString('ko-KR');}
+  function calc(){
+    var g=gs.filter(function(x){return x.checked;})[0], r=rs.filter(function(x){return x.checked;})[0];
+    var lim=+g.value, rate=+r.value, pay=Math.floor(lim*rate);
+    amt.innerHTML=fmt(pay)+'<small>원</small>';
+    meta.textContent=rate===0?'내실 금액이 없습니다. 월 한도 '+fmt(lim)+'원 전액을 장기요양보험에서 냅니다.':'이 금액을 넘지 않습니다. 월 한도 '+fmt(lim)+'원 가운데 나머지는 장기요양보험에서 냅니다.';
+  }
+  gs.concat(rs).forEach(function(x){x.addEventListener('change',calc);});
+  calc();
+})();
+
+  /* 컴퓨터처럼 바로 전화를 걸 수 없는 화면에서는 번호를 크게 보여 줌 */
+  var toast=document.createElement('div');toast.className='toast';toast.setAttribute('role','status');toast.hidden=true;document.body.appendChild(toast);
+  var tt;
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="tel:"]'); if(!a)return;
+    if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+    var num=a.getAttribute('href').slice(4).replace(/^(\d{2,3})(\d{3,4})(\d{4})$/,'$1-$2-$3');
+    toast.innerHTML='<b>'+num+'</b><span>휴대폰으로 이 번호에 전화 주세요</span><button type="button">번호 복사</button>';
+    toast.hidden=false; clearTimeout(tt); tt=setTimeout(function(){toast.hidden=true;},7000);
+    toast.querySelector('button').onclick=function(){
+      var btn=this;
+      try{navigator.clipboard.writeText(num).then(function(){btn.textContent='복사됨';},function(){btn.textContent='길게 눌러 복사';});}catch(err){btn.textContent='길게 눌러 복사';}
+    };
+  });
+</script>
