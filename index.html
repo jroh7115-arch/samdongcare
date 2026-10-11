@@ -1,3 +1,10 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#FFFFFF">
 <title>삼동노인복지지원센터</title>
 <meta name="description" content="울주군에서 지정한 노인장기요양보험 장기요양기관. 울산 울주군 12개 읍·면 어디든 방문요양, 장기요양등급 신청 안내. 삼동노인복지지원센터 052-254-7115">
 <link rel="canonical" href="https://www.samdongcare.kr/">
@@ -338,6 +345,9 @@ footer address{font-style:normal;line-height:1.75}
 </style>
 
 <!-- 아이콘·로고 묶음 -->
+<style>[hidden]{display:none!important}img{max-width:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="g-mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E9467"/><stop offset="1" stop-color="#12553A"/></linearGradient>
@@ -701,8 +711,9 @@ footer address{font-style:normal;line-height:1.75}
         <div class="card addr-card">
           <div><span class="eyebrow">주소</span><p class="big">울산광역시 울주군 삼동면<br>삼동로 780, 1층 102호</p></div>
           <div class="map-links">
-            <a class="btn pri" href="https://map.naver.com/p/search/%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg>네이버 지도</a>
-            <a class="btn line" href="https://map.kakao.com/?q=%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" target="_blank" rel="noopener">카카오맵</a>
+            <a class="btn pri map-go" href="https://m.map.naver.com/search2/search.naver?query=%EC%9A%B8%EC%82%B0%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" data-app="nmap://search?query=%EC%9A%B8%EC%82%B0%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780&amp;appname=kr.samdongcare" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg>네이버 지도</a>
+            <a class="btn line" href="https://map.kakao.com/link/search/%EC%9A%B8%EC%82%B0%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%82%BC%EB%8F%99%EB%A9%B4%20%EC%82%BC%EB%8F%99%EB%A1%9C%20780" target="_blank" rel="noopener">카카오맵</a>
+            <button class="btn line" type="button" id="copyAddr">주소 복사</button>
           </div>
         </div>
         <div class="card addr-card">
@@ -860,4 +871,23 @@ footer address{font-style:normal;line-height:1.75}
       try{navigator.clipboard.writeText(num).then(function(){btn.textContent='복사됨';},function(){btn.textContent='길게 눌러 복사';});}catch(err){btn.textContent='길게 눌러 복사';}
     };
   });
+
+  /* 네이버 지도: 휴대폰이면 앱을 검색어와 함께 열고, 앱이 없으면 모바일 웹 지도로 */
+  document.querySelectorAll('.map-go').forEach(function(a){
+    a.addEventListener('click',function(e){
+      if(!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent))return;
+      e.preventDefault();
+      var web=a.getAttribute('href'), app=a.getAttribute('data-app'), t=Date.now();
+      window.location.href=app;
+      setTimeout(function(){ if(!document.hidden && Date.now()-t<2500){ window.location.href=web; } },1500);
+    });
+  });
+  var ca=document.getElementById('copyAddr');
+  if(ca){ca.addEventListener('click',function(){
+    var addr='울산광역시 울주군 삼동면 삼동로 780, 1층 102호';
+    try{navigator.clipboard.writeText(addr).then(function(){ca.textContent='복사됨';},function(){ca.textContent='길게 눌러 복사';});}catch(err){ca.textContent='길게 눌러 복사';}
+  });}
 </script>
+
+</body>
+</html>
