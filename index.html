@@ -912,7 +912,7 @@ footer address{font-style:normal;line-height:1.75}
     var pay=Math.floor(covered*rate/10)*10+extra;
     amt.innerHTML=fmt(pay)+'<small>원</small>';
     meta.textContent='한 달 약 '+visits+'회 방문 · 총 '+fmt(total)+'원 가운데 '+fmt(covered-Math.floor(covered*rate/10)*10)+'원은 장기요양보험에서 냅니다.';
-    if(extra>0){over.hidden=false;over.textContent='등급 한도('+fmt(lim)+'원)를 넘는 '+fmt(extra)+'원은 보험 적용이 안 돼 전액 본인 부담이에요. 횟수나 시간을 줄여 보세요.';}
+    if(extra>0){over.hidden=false;over.textContent='등급 한도('+fmt(lim)+'원)를 넘는 '+fmt(extra)+'원은 전액 본인 부담입니다.';}
     else{over.hidden=true;}
   }
   gs.concat(rs,ds,hs).forEach(function(x){x.addEventListener('change',calc);});
